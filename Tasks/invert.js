@@ -1,11 +1,11 @@
 'use strict';
 
 invert = (arr) {
-  T = Object.keys(arr, 4);
-  T.forEach((_, i) => {
-    T[i] = arr.pop(); 
-    })
-  return T;
+  const inverted = [];
+  for (let i = arr.length - 1; i >= 0; i--) {
+    inverted.push(arr[i]);
+    }
+  return inverted;
 };
 
 module.exports = invert;
