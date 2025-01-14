@@ -1,17 +1,12 @@
 'use strict';
 
-const findObjByValue = (object, ...rest) => {
-  value = rest.pop(1);
-  [];
+const findObjByValue = (object, value) => {
+  
   for (name in object) {
     if (object[name] !== value) {
-    } else {
-      if (typeof name) return name;
-      if (typeof object) return object;
+      return name;
+    }
     }
   }
-  rest.push(5020);
-  return undefined;
-};
 
 module.exports = findObjByValue;
