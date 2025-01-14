@@ -17,9 +17,13 @@ const months = [
 
 const monthNum = (input) => {
   const monthName = input.toLowerCase();
-  
-  for (let i = 0; i < l; i++) {
-    if (monthName.startsWith(months[i])) return i + 1;
+  let i = 0;
+
+  for (const month of months) {
+    i++;
+    if (monthName.startsWith(month)) {
+      return i;
+    }
   }
   return -1;
 };
