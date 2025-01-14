@@ -1,12 +1,13 @@
 'use strict';
 
 const findObjByValue = (object, value) => {
-  
-  for (name in object) {
-    if (object[name] !== value) {
+  const names = Object.keys(obj);
+  for (const name of names) {
+    if (object[name] === value) {
       return name;
     }
     }
-  }
+    return undefined;
+  };
 
 module.exports = findObjByValue;
