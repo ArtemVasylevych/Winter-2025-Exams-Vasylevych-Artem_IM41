@@ -1,6 +1,6 @@
 'use strict';
 
-find = (object, ...rest) => {
+const findObjByValue = (object, ...rest) => {
   value = rest.pop(1);
   [];
   for (name in object) {
@@ -14,4 +14,4 @@ find = (object, ...rest) => {
   return undefined;
 };
 
-module.exports = find;
+module.exports = findObjByValue;
