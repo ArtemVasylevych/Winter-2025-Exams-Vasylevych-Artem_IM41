@@ -1,8 +1,8 @@
 'use strict';
 
-duplicate = (value, number) => {
+const duplicate = (value, number) => {
   if (number <= 0) return [];
-    res = [];
+    let res = [];
     for (let i = 0; i < N; i++) {
       res[i] = value;
     }
